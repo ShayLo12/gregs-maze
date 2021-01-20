@@ -9,14 +9,14 @@
 <title>"""
 {printSprite "A"}{rbw}{wvy}Greg's Maze{wvy}{rbw}{printSprite "a"}
 
-Use WASD to move and enter for dialogue.
+Help Greg find his missing cat Apollo! {printSprite "a"}
 """</title>
 
 <script type="text/bitsyGameData" id="exportedGameData">
 """
 {printSprite "A"}{rbw}{wvy}Greg's Maze{wvy}{rbw}{printSprite "a"}
 
-Use WASD to move and enter for dialogue.
+Help Greg find his missing cat Apollo! {printSprite "a"}
 """
 
 # BITSY VERSION 7.2
@@ -26,16 +26,21 @@ Use WASD to move and enter for dialogue.
 PAL 0
 NAME blueprint
 0,0,0
-255,4,5
+2,136,2
 250,250,2
 
+PAL 1
+0,0,0
+13,136,2
+255,247,143
+
 ROOM 0
-a,a,a,a,a,a,a,a,a,0,0,0,a,a,a,a
-a,0,0,0,0,0,0,0,0,0,a,0,0,0,0,a
-a,a,a,a,a,0,a,a,a,0,a,a,a,a,0,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,a,a,a,a,0,a,a,a,0,a,a,a,a,a,a
 a,0,0,0,a,0,a,0,a,0,0,0,0,0,0,a
-a,0,a,0,a,0,a,0,a,a,a,0,a,a,0,a
-a,0,a,0,a,0,0,0,0,0,0,0,0,a,0,a
+a,0,a,0,a,0,a,0,a,a,a,a,a,a,a,a
+a,0,a,0,a,0,0,0,0,0,0,0,0,0,0,a
 a,0,a,a,a,0,a,a,a,a,0,a,a,a,a,a
 a,0,0,0,0,0,a,0,a,0,0,a,0,0,0,a
 a,0,a,a,a,0,a,0,a,a,a,a,0,a,0,a
@@ -43,9 +48,9 @@ a,0,a,0,a,0,a,0,a,0,0,0,0,a,0,a
 a,0,a,0,0,0,0,0,a,a,a,a,0,a,0,a
 a,0,a,a,a,a,a,0,0,0,0,a,0,a,0,a
 a,0,0,0,0,0,0,0,a,a,a,a,0,a,0,a
-a,0,a,a,a,a,a,0,a,0,0,0,0,a,0,a
-a,0,0,0,0,0,a,0,0,0,a,0,a,a,0,b
-a,a,a,a,a,a,a,a,a,a,a,0,0,a,a,a
+a,0,a,a,a,a,a,0,a,a,0,0,0,a,0,a
+a,0,0,0,0,0,a,0,0,0,0,a,a,a,0,b
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
 NAME room 1
 ITM 2 15,14
 ITM 1 5,14
@@ -56,7 +61,7 @@ a,a,a,a,a,0,0,0,0,0,a,0,0,0,0,0
 0,0,0,0,a,a,a,a,a,0,a,0,a,a,a,a
 0,a,a,0,0,0,0,0,a,0,a,0,0,0,0,a
 0,0,a,a,0,a,a,a,a,0,a,a,a,a,0,a
-a,0,0,a,0,0,0,0,0,0,0,0,0,a,0,a
+a,0,0,a,0,a,0,0,0,0,0,0,0,a,0,a
 a,0,a,a,0,a,a,a,a,0,a,a,0,a,0,a
 a,0,0,0,0,0,0,0,a,0,a,a,0,a,0,a
 a,0,a,a,a,a,a,0,a,0,a,0,0,a,0,0
@@ -67,19 +72,41 @@ a,0,a,a,a,0,a,0,0,0,a,0,a,0,a,0
 0,a,0,0,a,0,a,0,a,0,a,0,a,0,0,0
 a,a,a,0,a,0,a,0,a,0,0,0,0,0,a,0
 0,0,a,0,a,0,a,0,a,a,a,a,a,0,a,0
-a,0,0,0,a,0,0,0,0,0,0,0,0,0,a,0
+a,0,0,0,a,0,0,0,0,0,0,0,a,0,a,0
 NAME room 2
+ITM 3 15,0
+ITM 1 2,4
+PAL 0
+
+ROOM 2
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,a,0
+0,a,a,a,a,a,a,a,a,a,a,0,a,0,a,0
+0,a,0,a,0,0,0,0,0,0,0,0,a,0,a,0
+0,a,0,a,a,a,a,a,a,a,a,0,a,0,a,0
+0,a,0,a,0,0,0,0,0,0,a,0,a,0,a,0
+0,a,0,0,0,a,a,a,a,0,a,0,a,0,a,0
+0,a,0,a,a,a,0,0,a,0,a,0,a,0,0,0
+0,a,0,a,0,a,0,0,0,0,a,0,a,0,a,0
+0,a,0,a,0,a,a,a,a,a,a,0,a,0,a,0
+0,0,0,a,0,0,0,0,0,0,0,0,a,0,a,0
+0,a,0,a,0,a,a,a,a,a,a,a,a,0,a,0
+0,a,0,0,0,0,0,0,a,0,0,0,0,0,a,0
+0,a,a,a,a,a,a,0,a,a,a,a,a,a,a,0
+0,a,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+NAME room 3
 PAL 0
 
 TIL a
+11011011
 11111111
-11000011
-10100101
-10011001
-10011001
-10100101
-11000011
+01111110
+11111110
 11111111
+01111111
+01111110
+00011000
 NAME block
 WAL true
 
@@ -108,8 +135,8 @@ SPR A
 00011000
 00011000
 00011000
-01111110
 11111111
+10111101
 10111101
 00100100
 00100100
@@ -117,8 +144,8 @@ SPR A
 00011000
 00011100
 00011000
-01111110
 11111111
+10111101
 10111101
 00100100
 00110110
@@ -145,7 +172,46 @@ SPR a
 00000000
 NAME cat
 DLG 0
-POS 1 15,0
+POS 2 6,8
+
+SPR b
+01111110
+01000010
+01000010
+01111110
+00011000
+00011000
+00011000
+00011000
+NAME sign 1
+DLG b
+POS 0 14,3
+
+SPR c
+01111110
+01000010
+01000010
+01000010
+01000010
+01111110
+00011000
+00011000
+NAME sign 2
+DLG a
+POS 1 6,4
+
+SPR d
+11111111
+10000001
+10000001
+10000001
+11111111
+00011000
+00011000
+00011000
+NAME sign 3
+DLG 9
+POS 2 0,2
 
 ITM 1
 00000000
@@ -169,25 +235,46 @@ NAME key
 DLG 4
 
 ITM 2
-00011000
-00011000
-00011000
-00011000
-00011000
-00011000
-00011000
-00011000
+01111111
+01001001
+01001001
+01111111
+01111111
+01001001
+01001001
+01111111
 >
-01111110
-01100110
-01100110
-01111110
-01111110
-01100110
-01100110
-01111110
+01111111
+01001001
+01001001
+01111111
+01111111
+01001001
+01001001
+01111111
 NAME door
 DLG 3
+
+ITM 3
+00111111
+00100001
+00100001
+00111111
+00111111
+00100001
+00100001
+00111111
+>
+00111111
+00100001
+00100001
+00111111
+00111111
+00100001
+00100001
+00111111
+NAME door 2
+DLG 5
 
 DLG 0
 """
@@ -214,6 +301,27 @@ DLG 4
 {a = {item "1"}}
 """
 NAME Key
+
+DLG 5
+"""
+{property locked true}
+{item "1" 1}
+{property locked false}
+{exit "2" 0 0 "tunnel"}
+"""
+NAME door 2
+
+DLG 9
+Come on, this is the easiest one! B)
+NAME sign 3 dialog 1
+
+DLG a
+Now you're just wasting time... ;)
+NAME sign 2 dialog 1
+
+DLG b
+You have gone the wrong way, champ :P
+NAME sign 1 dialog
 
 VAR a
 42
